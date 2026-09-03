@@ -95,6 +95,14 @@
       demo: null,
       repo: "https://github.com/antilles183/vfx-google-sheets-tracker-bot",
     },
+    {
+      title: "Feature Selection",
+      desc: "C++ implementation of Forward Selection and Backward Elimination feature selection algorithms, built from scratch for an Intro to AI course.",
+      tags: ["ai", "cpp"],
+      badge: null,
+      demo: null,
+      repo: "https://github.com/antilles183/feature-selector",
+    },
   ];
 
   /* ============================================================
@@ -124,7 +132,7 @@
     title.textContent = project.title;
 
     top.appendChild(title);
-    top.appendChild(createBadge(project.badge));
+    if (project.badge) top.appendChild(createBadge(project.badge));
 
     const desc = document.createElement("p");
     desc.className = "card-desc";
