@@ -81,7 +81,7 @@
   const PROJECTS = [
     {
       title: "Twenty Questions",
-      desc: "A 20 Questions game where you either quiz an AI-powered bot or let it guess your secret — React frontend, FastAPI backend, real OpenAI-driven reasoning.",
+      desc: "A classic 20 Questions game where you either quiz an AI-powered bot or let it guess what you've come up with — React frontend, FastAPI backend, real OpenAI-driven reasoning.",
       tags: ["ai", "openai", "react", "fastapi", "python", "html", "css", "typescript"],
       badge: "live",
       demo: "https://twenty-questions-alpha.vercel.app/",
@@ -97,7 +97,7 @@
     },
     {
       title: "Feature Selection",
-      desc: "C++ implementation of Forward Selection and Backward Elimination feature selection algorithms, built from scratch for an Intro to AI course.",
+      desc: "An implementation of Forward Selection and Backward Elimination feature selection algorithms — built from scratch in C++ for an Intro to AI course. Parses and normalizes Titanic data sets before performing chosen algorithm with verbose output.",
       tags: ["ai", "cpp"],
       badge: null,
       demo: null,
