@@ -167,54 +167,6 @@ ul { list-style: none; padding: 0; }
 [data-theme="light"] .icon-moon { display: block; }
 
 /* ============================================================
-   Tag component — variants
-   ============================================================ */
-.tag-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.tag {
-  --tag-color: var(--accent);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 0.9rem;
-  border-radius: var(--radius-pill);
-  font-size: 0.85rem;
-  font-weight: 600;
-  font-family: var(--font-mono);
-  color: var(--text);
-  background: color-mix(in srgb, var(--tag-color) 14%, var(--surface));
-  border: 1px solid color-mix(in srgb, var(--tag-color) 35%, var(--border));
-  transition: transform var(--transition), background var(--transition);
-}
-.tag:hover { transform: translateY(-2px); background: color-mix(in srgb, var(--tag-color) 24%, var(--surface)); }
-
-.tag-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--tag-color);
-  flex-shrink: 0;
-}
-
-.tag[data-variant="ai"]         { --tag-color: var(--nord15); }
-.tag[data-variant="openai"]     { --tag-color: var(--nord7); }
-.tag[data-variant="html"]       { --tag-color: var(--nord12); }
-.tag[data-variant="css"]        { --tag-color: var(--nord10); }
-.tag[data-variant="javascript"] { --tag-color: var(--nord13); }
-.tag[data-variant="typescript"] { --tag-color: var(--nord9); }
-.tag[data-variant="python"]     { --tag-color: var(--nord8); }
-.tag[data-variant="cpp"]        { --tag-color: var(--nord14); }
-.tag[data-variant="java"]       { --tag-color: var(--nord11); }
-.tag[data-variant="react"]      { --tag-color: var(--nord13); }
-.tag[data-variant="fastapi"]    { --tag-color: var(--nord14); }
-.tag[data-variant="sheets"]     { --tag-color: var(--nord11); }
-.tag[data-variant="smtp"]       { --tag-color: var(--nord7); }
-
-/* ============================================================
    Badge component — variants
    ============================================================ */
 .badge {
@@ -293,28 +245,7 @@ ul { list-style: none; padding: 0; }
   font-size: 1.1rem;
   color: var(--text-muted);
   max-width: 46ch;
-  margin-bottom: 2.25rem;
 }
-
-.construction-tags {
-  justify-content: center;
-  margin-bottom: 2.75rem;
-}
-
-.construction-contact {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-/* ============================================================
-   Contact list
-   ============================================================ */
-.contact-list { display: flex; flex-direction: column; gap: 1rem; }
-.contact-list li { display: flex; align-items: center; gap: 0.75rem; color: var(--text-muted); }
-.contact-list a:hover { color: var(--accent); }
-.contact-list .icon { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
 
 /* ============================================================
    Footer
@@ -355,5 +286,4 @@ ul { list-style: none; padding: 0; }
    ============================================================ */
 @media (max-width: 480px) {
   .construction { padding: 3rem 0; }
-  .construction-contact { flex-direction: column; gap: 1rem; }
 }
