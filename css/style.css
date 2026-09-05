@@ -378,6 +378,34 @@ input, textarea { font: inherit; color: inherit; }
 .tag[data-variant="fastapi"]    { --tag-color: var(--nord14); }
 .tag[data-variant="sheets"]     { --tag-color: var(--nord11); }
 .tag[data-variant="smtp"]       { --tag-color: var(--nord7); }
+.tag[data-variant="knn"]        { --tag-color: var(--nord8); }
+.tag[data-variant="sql"]            { --tag-color: var(--nord10); }
+.tag[data-variant="bash"]           { --tag-color: var(--nord3); }
+.tag[data-variant="powershell"]     { --tag-color: var(--nord10); }
+.tag[data-variant="git"]            { --tag-color: var(--nord12); }
+.tag[data-variant="scala"]          { --tag-color: var(--nord11); }
+.tag[data-variant="cicd"]           { --tag-color: var(--nord14); }
+.tag[data-variant="linux"]          { --tag-color: var(--nord9); }
+.tag[data-variant="docker"]         { --tag-color: var(--nord9); }
+.tag[data-variant="virtualization"] { --tag-color: var(--nord7); }
+.tag[data-variant="networking"]     { --tag-color: var(--nord8); }
+.tag[data-variant="spark"]          { --tag-color: var(--nord12); }
+.tag[data-variant="hadoop"]         { --tag-color: var(--nord13); }
+.tag[data-variant="etl"]            { --tag-color: var(--nord7); }
+.tag[data-variant="jupyter"]        { --tag-color: var(--nord12); }
+.tag[data-variant="postgresql"]     { --tag-color: var(--nord10); }
+.tag[data-variant="mongodb"]        { --tag-color: var(--nord14); }
+.tag[data-variant="sqlite"]         { --tag-color: var(--nord8); }
+.tag[data-variant="gcp"]            { --tag-color: var(--nord13); }
+.tag[data-variant="jira"]           { --tag-color: var(--nord9); }
+.tag[data-variant="aftereffects"]   { --tag-color: var(--nord15); }
+.tag[data-variant="premiere"]       { --tag-color: var(--nord9); }
+.tag[data-variant="avid"]           { --tag-color: var(--nord11); }
+.tag[data-variant="davinci"]        { --tag-color: var(--nord7); }
+.tag[data-variant="fusion"]         { --tag-color: var(--nord10); }
+.tag[data-variant="nuke"]           { --tag-color: var(--nord13); }
+.tag[data-variant="maya"]           { --tag-color: var(--nord14); }
+.tag[data-variant="cinema4d"]       { --tag-color: var(--nord15); }
 
 /* ============================================================
    Badge component — variants

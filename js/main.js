@@ -20,6 +20,34 @@
     fastapi:    "FastAPI",
     sheets:     "Google Sheets API",
     smtp:       "SMTP",
+    knn:        "KNN Classification",
+    sql:            "SQL",
+    bash:           "Bash",
+    powershell:     "PowerShell",
+    git:            "Git",
+    scala:          "Scala",
+    cicd:           "CI/CD",
+    linux:          "Linux",
+    docker:         "Docker",
+    virtualization: "Virtualization",
+    networking:     "Networking",
+    spark:          "Apache Spark",
+    hadoop:         "Hadoop",
+    etl:            "ETL",
+    jupyter:        "Jupyter Notebooks",
+    postgresql:     "PostgreSQL",
+    mongodb:        "MongoDB",
+    sqlite:         "SQLite",
+    gcp:            "Google Cloud Computing",
+    jira:           "Jira",
+    aftereffects:   "Adobe After Effects",
+    premiere:       "Adobe Premiere",
+    avid:           "Avid",
+    davinci:        "DaVinci Resolve",
+    fusion:         "Fusion",
+    nuke:           "Nuke",
+    maya:           "Maya",
+    cinema4d:       "Cinema 4D",
   };
 
   function createTag(variant) {
@@ -76,6 +104,9 @@
   const HERO_TAGS = ["ai", "typescript", "python", "javascript"];
   const SKILL_TAGS = [
     "ai", "openai", "html", "css", "javascript", "typescript", "python", "cpp", "java",
+    "sql", "bash", "powershell", "git", "scala", "cicd", "linux", "docker", "virtualization",
+    "networking", "spark", "hadoop", "etl", "jupyter", "postgresql", "mongodb", "sqlite", "gcp",
+    "jira", "aftereffects", "premiere", "avid", "davinci", "fusion", "nuke", "maya", "cinema4d",
   ];
 
   const PROJECTS = [
@@ -98,7 +129,7 @@
     {
       title: "Feature Selection",
       desc: "An implementation of Forward Selection and Backward Elimination feature selection algorithms — built from scratch in C++ for an Intro to AI course. Parses and normalizes Titanic data sets before performing chosen algorithm with verbose output.",
-      tags: ["ai", "cpp"],
+      tags: ["ai", "cpp", "knn"],
       badge: null,
       demo: null,
       repo: "https://github.com/antilles183/feature-selector",
