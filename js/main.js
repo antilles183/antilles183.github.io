@@ -277,19 +277,50 @@
      ============================================================ */
   const form = document.getElementById("contact-form");
   const formNote = document.getElementById("form-note");
+  const submitBtn = form.querySelector("button[type=submit]");
+  const CONTACT_ENDPOINT = "https://api.antilles.dev/";
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     if (!form.checkValidity()) {
-      formNote.textContent = "Please fill in every field with a valid value.";
       formNote.classList.add("is-error");
+      formNote.textContent = "Please fill in every field with a valid value.";
       return;
     }
 
+    const payload = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      message: form.message.value.trim(),
+    };
+
     formNote.classList.remove("is-error");
-    formNote.textContent = "Thanks — your message has been noted. I'll reply soon.";
-    form.reset();
+    formNote.textContent = "Sending…";
+    submitBtn.disabled = true;
+
+    try {
+      const response = await fetch(CONTACT_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || "Request failed");
+      }
+
+      formNote.classList.remove("is-error");
+      formNote.textContent = "Thanks — your message has been sent. I'll reply soon.";
+      form.reset();
+    } catch (err) {
+      formNote.classList.add("is-error");
+      formNote.textContent = "Something went wrong sending your message. Please try again or email me directly.";
+    } finally {
+      submitBtn.disabled = false;
+    }
   });
 
   /* ============================================================
