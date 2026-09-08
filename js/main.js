@@ -48,6 +48,10 @@
     nuke:           "Nuke",
     maya:           "Maya",
     cinema4d:       "Cinema 4D",
+    frontend:       "Front End",
+    backend:        "Back End",
+    windows:        "Windows",
+    mac:            "Mac",
   };
 
   function createTag(variant) {
@@ -101,7 +105,7 @@
   /* ============================================================
      Content data
      ============================================================ */
-  const HERO_TAGS = ["ai", "typescript", "python", "javascript"];
+  const HERO_TAGS = ["ai", "frontend", "backend", "windows", "mac", "linux"];
   const SKILL_TAGS = [
     "ai", "openai", "html", "css", "javascript", "typescript", "python", "cpp", "java",
     "sql", "bash", "powershell", "git", "scala", "cicd", "linux", "docker", "virtualization",
