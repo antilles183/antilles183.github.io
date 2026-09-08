@@ -8,6 +8,7 @@
      ============================================================ */
   const TAG_VARIANTS = {
     ai:         "AI",
+    anthropic:  "Anthropic",
     openai:     "OpenAI",
     html:       "HTML",
     css:        "CSS",
@@ -107,7 +108,7 @@
      ============================================================ */
   const HERO_TAGS = ["ai", "frontend", "backend", "windows", "mac", "linux"];
   const SKILL_TAGS = [
-    "ai", "openai", "html", "css", "javascript", "typescript", "python", "cpp", "java",
+    "ai", "anthropic", "openai", "html", "css", "javascript", "typescript", "python", "cpp", "java",
     "sql", "bash", "powershell", "git", "scala", "cicd", "linux", "docker", "virtualization",
     "networking", "spark", "hadoop", "etl", "jupyter", "postgresql", "mongodb", "sqlite", "gcp",
     "jira", "aftereffects", "premiere", "avid", "davinci", "fusion", "nuke", "maya", "cinema4d",
