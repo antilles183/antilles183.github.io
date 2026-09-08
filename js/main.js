@@ -8,6 +8,7 @@
      ============================================================ */
   const TAG_VARIANTS = {
     ai:         "AI",
+    anthropic:  "Anthropic",
     openai:     "OpenAI",
     html:       "HTML",
     css:        "CSS",
@@ -48,6 +49,10 @@
     nuke:           "Nuke",
     maya:           "Maya",
     cinema4d:       "Cinema 4D",
+    frontend:       "Front End",
+    backend:        "Back End",
+    windows:        "Windows",
+    mac:            "Mac",
   };
 
   function createTag(variant) {
@@ -101,9 +106,9 @@
   /* ============================================================
      Content data
      ============================================================ */
-  const HERO_TAGS = ["ai", "typescript", "python", "javascript"];
+  const HERO_TAGS = ["ai", "frontend", "backend", "windows", "mac", "linux"];
   const SKILL_TAGS = [
-    "ai", "openai", "html", "css", "javascript", "typescript", "python", "cpp", "java",
+    "ai", "anthropic", "openai", "html", "css", "javascript", "typescript", "python", "cpp", "java",
     "sql", "bash", "powershell", "git", "scala", "cicd", "linux", "docker", "virtualization",
     "networking", "spark", "hadoop", "etl", "jupyter", "postgresql", "mongodb", "sqlite", "gcp",
     "jira", "aftereffects", "premiere", "avid", "davinci", "fusion", "nuke", "maya", "cinema4d",

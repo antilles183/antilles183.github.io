@@ -379,6 +379,7 @@ input, textarea { font: inherit; color: inherit; }
 }
 
 .tag[data-variant="ai"]         { --tag-color: var(--nord15); }
+.tag[data-variant="anthropic"]  { --tag-color: var(--nord12); }
 .tag[data-variant="openai"]     { --tag-color: var(--nord7); }
 .tag[data-variant="html"]       { --tag-color: var(--nord12); }
 .tag[data-variant="css"]        { --tag-color: var(--nord10); }
@@ -398,7 +399,7 @@ input, textarea { font: inherit; color: inherit; }
 .tag[data-variant="git"]            { --tag-color: var(--nord12); }
 .tag[data-variant="scala"]          { --tag-color: var(--nord11); }
 .tag[data-variant="cicd"]           { --tag-color: var(--nord14); }
-.tag[data-variant="linux"]          { --tag-color: var(--nord9); }
+.tag[data-variant="linux"]          { --tag-color: var(--nord12); }
 .tag[data-variant="docker"]         { --tag-color: var(--nord9); }
 .tag[data-variant="virtualization"] { --tag-color: var(--nord7); }
 .tag[data-variant="networking"]     { --tag-color: var(--nord8); }
@@ -419,6 +420,10 @@ input, textarea { font: inherit; color: inherit; }
 .tag[data-variant="nuke"]           { --tag-color: var(--nord13); }
 .tag[data-variant="maya"]           { --tag-color: var(--nord14); }
 .tag[data-variant="cinema4d"]       { --tag-color: var(--nord15); }
+.tag[data-variant="frontend"]       { --tag-color: var(--nord13); }
+.tag[data-variant="backend"]        { --tag-color: var(--nord14); }
+.tag[data-variant="windows"]        { --tag-color: var(--nord10); }
+.tag[data-variant="mac"]            { --tag-color: var(--nord11); }
 
 /* ============================================================
    Badge component — variants
