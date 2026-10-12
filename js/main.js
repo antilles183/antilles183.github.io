@@ -10,6 +10,7 @@
     ai:         "AI",
     anthropic:  "Anthropic",
     openai:     "OpenAI",
+    gemini:     "Gemini",
     html:       "HTML",
     css:        "CSS",
     javascript: "JavaScript",
@@ -108,7 +109,7 @@
      ============================================================ */
   const HERO_TAGS = ["ai", "frontend", "backend", "windows", "mac", "linux"];
   const SKILL_TAGS = [
-    "ai", "anthropic", "openai", "html", "css", "javascript", "typescript", "python", "cpp", "java",
+    "ai", "anthropic", "openai", "gemini", "html", "css", "javascript", "typescript", "python", "cpp", "java",
     "sql", "bash", "powershell", "git", "scala", "cicd", "linux", "docker", "virtualization",
     "networking", "spark", "hadoop", "etl", "jupyter", "postgresql", "mongodb", "sqlite", "gcp",
     "jira", "aftereffects", "premiere", "avid", "davinci", "fusion", "nuke", "maya", "cinema4d",
@@ -139,6 +140,15 @@
       demo: null,
       repo: "https://github.com/antilles183/feature-selector",
     },
+    {
+      title: "Trade Grade",
+      desc: "An AI powered fantasy football trade analyzer. Search NFL players, build a trade offer (optionally with both rosters), and get a Gemini-generated grade and verdict.",
+      tags: ["ai", "gemini", "fastapi", "python", "html", "css", "typescript", "docker", "cicd"],
+      badge: "live",
+      demo: "https://trade-grade.vercel.app/",
+      repo: "https://github.com/antilles183/trade-grade",
+    },
+
   ];
 
   /* ============================================================
